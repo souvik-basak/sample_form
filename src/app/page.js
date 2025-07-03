@@ -27,7 +27,7 @@ export default function Home() {
   
       if (res.ok) {
         setSubmitted(true);
-        setFormData({ name: '', email: '' });
+        setFormData({ name: '', email: '', message: '', phone: '' });
         setTimeout(() => setSubmitted(false), 3000);
       } else {
         console.error("Failed to submit");
